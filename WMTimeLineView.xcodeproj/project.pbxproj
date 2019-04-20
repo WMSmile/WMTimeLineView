@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1895EFA8226AC486006CA23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFA7226AC486006CA23B /* AppDelegate.swift */; };
+		1895EFAA226AC486006CA23B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFA9226AC486006CA23B /* ViewController.swift */; };
+		1895EFAD226AC486006CA23B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895EFAB226AC486006CA23B /* Main.storyboard */; };
+		1895EFAF226AC487006CA23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1895EFAE226AC487006CA23B /* Assets.xcassets */; };
+		1895EFB2226AC487006CA23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895EFB0226AC487006CA23B /* LaunchScreen.storyboard */; };
+		1895EFBD226AC592006CA23B /* WMTimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFBC226AC592006CA23B /* WMTimeLineTableViewCell.swift */; };
+		1895EFBF226AC5D5006CA23B /* WMTimeLineModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFBE226AC5D5006CA23B /* WMTimeLineModelProtocol.swift */; };
+		1895EFC1226AC67E006CA23B /* WMCustomTimeLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFC0226AC67E006CA23B /* WMCustomTimeLineModel.swift */; };
+		6068EB88A39B53A806FF8C08 /* Pods_WMTimeLineView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920A9A5CF758F3EDB4F09F1D /* Pods_WMTimeLineView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		126F39E0577C46FD53CF5E27 /* Pods-WMTimeLineView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTimeLineView.release.xcconfig"; path = "Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView.release.xcconfig"; sourceTree = "<group>"; };
+		1895EFA4226AC486006CA23B /* WMTimeLineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMTimeLineView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1895EFA7226AC486006CA23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1895EFA9226AC486006CA23B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1895EFAC226AC486006CA23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1895EFAE226AC487006CA23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1895EFB1226AC487006CA23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1895EFB3226AC487006CA23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1895EFBC226AC592006CA23B /* WMTimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTimeLineTableViewCell.swift; sourceTree = "<group>"; };
+		1895EFBE226AC5D5006CA23B /* WMTimeLineModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTimeLineModelProtocol.swift; sourceTree = "<group>"; };
+		1895EFC0226AC67E006CA23B /* WMCustomTimeLineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCustomTimeLineModel.swift; sourceTree = "<group>"; };
+		6988DD1351A52084BAEFAED2 /* Pods-WMTimeLineView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTimeLineView.debug.xcconfig"; path = "Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView.debug.xcconfig"; sourceTree = "<group>"; };
+		920A9A5CF758F3EDB4F09F1D /* Pods_WMTimeLineView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTimeLineView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1895EFA1226AC486006CA23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6068EB88A39B53A806FF8C08 /* Pods_WMTimeLineView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1895EF9B226AC486006CA23B = {
+			isa = PBXGroup;
+			children = (
+				1895EFA6226AC486006CA23B /* WMTimeLineView */,
+				1895EFA5226AC486006CA23B /* Products */,
+				F579AC0B23D80B0D7BA27214 /* Pods */,
+				F06007EDF22AF97C69669187 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1895EFA5226AC486006CA23B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1895EFA4226AC486006CA23B /* WMTimeLineView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1895EFA6226AC486006CA23B /* WMTimeLineView */ = {
+			isa = PBXGroup;
+			children = (
+				1895EFB9226AC560006CA23B /* WMTimeLine */,
+				1895EFA7226AC486006CA23B /* AppDelegate.swift */,
+				1895EFA9226AC486006CA23B /* ViewController.swift */,
+				1895EFAB226AC486006CA23B /* Main.storyboard */,
+				1895EFAE226AC487006CA23B /* Assets.xcassets */,
+				1895EFB0226AC487006CA23B /* LaunchScreen.storyboard */,
+				1895EFB3226AC487006CA23B /* Info.plist */,
+			);
+			path = WMTimeLineView;
+			sourceTree = "<group>";
+		};
+		1895EFB9226AC560006CA23B /* WMTimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				1895EFBA226AC560006CA23B /* Model */,
+				1895EFBB226AC560006CA23B /* Views */,
+			);
+			path = WMTimeLine;
+			sourceTree = "<group>";
+		};
+		1895EFBA226AC560006CA23B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1895EFBE226AC5D5006CA23B /* WMTimeLineModelProtocol.swift */,
+				1895EFC0226AC67E006CA23B /* WMCustomTimeLineModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1895EFBB226AC560006CA23B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1895EFBC226AC592006CA23B /* WMTimeLineTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F06007EDF22AF97C69669187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				920A9A5CF758F3EDB4F09F1D /* Pods_WMTimeLineView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F579AC0B23D80B0D7BA27214 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6988DD1351A52084BAEFAED2 /* Pods-WMTimeLineView.debug.xcconfig */,
+				126F39E0577C46FD53CF5E27 /* Pods-WMTimeLineView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1895EFA3226AC486006CA23B /* WMTimeLineView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1895EFB6226AC487006CA23B /* Build configuration list for PBXNativeTarget "WMTimeLineView" */;
+			buildPhases = (
+				329832281D6F85D26B73E613 /* [CP] Check Pods Manifest.lock */,
+				1895EFA0226AC486006CA23B /* Sources */,
+				1895EFA1226AC486006CA23B /* Frameworks */,
+				1895EFA2226AC486006CA23B /* Resources */,
+				2D21E31B356413C85097743D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMTimeLineView;
+			productName = WMTimeLineView;
+			productReference = 1895EFA4226AC486006CA23B /* WMTimeLineView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1895EF9C226AC486006CA23B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = wumeng;
+				TargetAttributes = {
+					1895EFA3226AC486006CA23B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 1895EF9F226AC486006CA23B /* Build configuration list for PBXProject "WMTimeLineView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1895EF9B226AC486006CA23B;
+			productRefGroup = 1895EFA5226AC486006CA23B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1895EFA3226AC486006CA23B /* WMTimeLineView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1895EFA2226AC486006CA23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1895EFB2226AC487006CA23B /* LaunchScreen.storyboard in Resources */,
+				1895EFAF226AC487006CA23B /* Assets.xcassets in Resources */,
+				1895EFAD226AC486006CA23B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D21E31B356413C85097743D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329832281D6F85D26B73E613 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WMTimeLineView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1895EFA0226AC486006CA23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1895EFBF226AC5D5006CA23B /* WMTimeLineModelProtocol.swift in Sources */,
+				1895EFBD226AC592006CA23B /* WMTimeLineTableViewCell.swift in Sources */,
+				1895EFAA226AC486006CA23B /* ViewController.swift in Sources */,
+				1895EFA8226AC486006CA23B /* AppDelegate.swift in Sources */,
+				1895EFC1226AC67E006CA23B /* WMCustomTimeLineModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1895EFAB226AC486006CA23B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1895EFAC226AC486006CA23B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1895EFB0226AC487006CA23B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1895EFB1226AC487006CA23B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1895EFB4226AC487006CA23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1895EFB5226AC487006CA23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1895EFB7226AC487006CA23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6988DD1351A52084BAEFAED2 /* Pods-WMTimeLineView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ZCVSQ8X9;
+				INFOPLIST_FILE = WMTimeLineView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wumeng.WMTimeLineView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1895EFB8226AC487006CA23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 126F39E0577C46FD53CF5E27 /* Pods-WMTimeLineView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ZCVSQ8X9;
+				INFOPLIST_FILE = WMTimeLineView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wumeng.WMTimeLineView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1895EF9F226AC486006CA23B /* Build configuration list for PBXProject "WMTimeLineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1895EFB4226AC487006CA23B /* Debug */,
+				1895EFB5226AC487006CA23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1895EFB6226AC487006CA23B /* Build configuration list for PBXNativeTarget "WMTimeLineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1895EFB7226AC487006CA23B /* Debug */,
+				1895EFB8226AC487006CA23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1895EF9C226AC486006CA23B /* Project object */;
+}
