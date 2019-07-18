@@ -19,6 +19,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //可以继承WMBaseTableViewCell 添加东西
         
         self.createTableView();
         

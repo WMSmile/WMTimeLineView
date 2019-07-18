@@ -16,6 +16,7 @@
 		1895EFBF226AC5D5006CA23B /* WMTimeLineModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFBE226AC5D5006CA23B /* WMTimeLineModelProtocol.swift */; };
 		1895EFC1226AC67E006CA23B /* WMCustomTimeLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895EFC0226AC67E006CA23B /* WMCustomTimeLineModel.swift */; };
 		6068EB88A39B53A806FF8C08 /* Pods_WMTimeLineView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920A9A5CF758F3EDB4F09F1D /* Pods_WMTimeLineView.framework */; };
+		7A27AED222E01864004D2C7B /* WMBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27AED122E01864004D2C7B /* WMBaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1895EFBE226AC5D5006CA23B /* WMTimeLineModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTimeLineModelProtocol.swift; sourceTree = "<group>"; };
 		1895EFC0226AC67E006CA23B /* WMCustomTimeLineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCustomTimeLineModel.swift; sourceTree = "<group>"; };
 		6988DD1351A52084BAEFAED2 /* Pods-WMTimeLineView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMTimeLineView.debug.xcconfig"; path = "Target Support Files/Pods-WMTimeLineView/Pods-WMTimeLineView.debug.xcconfig"; sourceTree = "<group>"; };
+		7A27AED122E01864004D2C7B /* WMBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMBaseTableViewCell.swift; sourceTree = "<group>"; };
 		920A9A5CF758F3EDB4F09F1D /* Pods_WMTimeLineView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMTimeLineView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				1895EFBC226AC592006CA23B /* WMTimeLineTableViewCell.swift */,
+				7A27AED122E01864004D2C7B /* WMBaseTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A27AED222E01864004D2C7B /* WMBaseTableViewCell.swift in Sources */,
 				1895EFBF226AC5D5006CA23B /* WMTimeLineModelProtocol.swift in Sources */,
 				1895EFBD226AC592006CA23B /* WMTimeLineTableViewCell.swift in Sources */,
 				1895EFAA226AC486006CA23B /* ViewController.swift in Sources */,

@@ -9,12 +9,8 @@
 import UIKit
 import SnapKit
 
-class WMTimeLineTableViewCell: UITableViewCell {
+class WMTimeLineTableViewCell: WMBaseTableViewCell {
     
-    var leftView:UIView?
-    var upLineView:UIView?
-    var middleView:UIView?
-    var downLineView:UIView?
     
     var contentLB:UILabel?
     var timeLB:UILabel?
@@ -22,43 +18,12 @@ class WMTimeLineTableViewCell: UITableViewCell {
     
     
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier);
-        initViews();
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     
     //MARK:-
-    func initViews() -> Void {
-        self.backgroundColor = UIColor.white;
-        self.contentView.backgroundColor = UIColor.white;
-        self.selectionStyle = .none;
+    override func initViews() -> Void {
+        super.initViews()
         
-        self.leftView = UIView()
-        self.contentView.addSubview(leftView!);
-        
-        
-        self.upLineView = UIView.init();
-        self.upLineView?.backgroundColor = UIColor.gray;
-        self.leftView?.addSubview(upLineView!);
-        
-        self.middleView = UIView.init();
-        self.middleView?.backgroundColor = UIColor.blue;
-        self.middleView?.clipsToBounds = true;
-        self.middleView?.layer.cornerRadius = 10;
-        self.leftView?.addSubview(middleView!);
-        self.middleView?.setContentHuggingPriority(UILayoutPriority.required, for: NSLayoutConstraint.Axis.horizontal)
-        self.middleView?.setContentCompressionResistancePriority(UILayoutPriority.required, for: NSLayoutConstraint.Axis.horizontal)
-        self.middleView?.setContentHuggingPriority(UILayoutPriority.required, for: NSLayoutConstraint.Axis.vertical)
-        self.middleView?.setContentCompressionResistancePriority(UILayoutPriority.required, for: NSLayoutConstraint.Axis.vertical)
-        
-        self.downLineView = UIView.init();
-        self.downLineView?.backgroundColor = UIColor.gray;
-        self.leftView?.addSubview(downLineView!);
+      
         
         
         self.contentLB = UILabel();
@@ -73,31 +38,7 @@ class WMTimeLineTableViewCell: UITableViewCell {
         timeLB?.text = "1992-09-08 00000";
         self.contentView.addSubview(timeLB!);
         
-        self.leftView?.snp.makeConstraints({ (ConstraintMaker) in
-            ConstraintMaker.top.equalToSuperview();
-            ConstraintMaker.left.equalToSuperview().offset(15);
-            ConstraintMaker.width.equalTo(10);
-            ConstraintMaker.bottom.equalToSuperview();
-        })
         
-        self.upLineView?.snp.makeConstraints({ (ConstraintMaker) in
-            ConstraintMaker.top.equalToSuperview();
-            ConstraintMaker.centerX.equalToSuperview().offset(0);
-            ConstraintMaker.width.equalTo(4);
-            ConstraintMaker.bottom.equalTo((self.middleView?.snp.bottom)!).offset(0)
-        })
-        self.middleView?.snp.makeConstraints({ (ConstraintMaker) in
-//            ConstraintMaker.center.equalToSuperview();
-            ConstraintMaker.top.equalToSuperview().offset(15);
-            ConstraintMaker.centerX.equalToSuperview();
-            ConstraintMaker.height.width.equalTo(20);
-        })
-        self.downLineView?.snp.makeConstraints({ (ConstraintMaker) in
-            ConstraintMaker.top.equalTo((self.middleView?.snp.bottom)!).offset(0)
-            ConstraintMaker.centerX.equalToSuperview().offset(0);
-            ConstraintMaker.width.equalTo(4);
-            ConstraintMaker.bottom.equalToSuperview();
-        })
         
         self.contentLB?.snp.makeConstraints({ (ConstraintMaker) in
             ConstraintMaker.top.equalToSuperview().offset(15);
@@ -125,11 +66,8 @@ class WMTimeLineTableViewCell: UITableViewCell {
         self.contentLB?.text = model.wm_getContentStr();
         self.timeLB?.text = model.wm_getTimeStr();
         
-        self.upLineView?.isHidden = isHideUplineView;
-        self.downLineView?.isHidden = isHideDownView;
+        self.updateUpAndDown(isHideUplineView, isHideDownView)
         
-        self.setNeedsLayout();
-        self.layoutIfNeeded();
         
     }
     
